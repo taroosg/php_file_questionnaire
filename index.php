@@ -71,7 +71,7 @@ $result_data = $get_result($alcohols, $generate_fantastic_array($get_raw_data('d
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>textファイル書き込み型todoリスト（入力画面）</title>
+  <title>Alcohol投票所</title>
 </head>
 
 <body>
