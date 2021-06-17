@@ -41,7 +41,7 @@ array_map(
 
 // 配列中のtypeで集計する関数
 $get_type_count = fn (string $type, array $array): int => count(array_filter($array, fn ($x) => $x['type'] === $type));
-$get_type_percent = fn (string $type, array $array): float => (count(array_filter($array, fn ($x) => $x['type'] === $type)) * 100 / count($array));
+$get_type_percent = fn (string $type, array $array): float => (count(array_filter($array, fn ($x) => $x['type'] === $type)) * 100 / (count($array) !== 0 ? count($array) : 1));
 
 // 集計した配列を作成する関数
 $get_result = fn (array $type_array, array $data_array): array => array_map(
